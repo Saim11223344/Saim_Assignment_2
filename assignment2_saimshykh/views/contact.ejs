@@ -1,0 +1,48 @@
+<%- include partials/header.ejs%>
+
+
+<%- include partials/main_nav.ejs%>
+
+<main id="contact">
+    
+      <h1 id="display-5">Welcome to the Contact page</h1>
+      
+                                 <form id="fo" role="form">
+                
+                                <label for="form_name">Firstname *</label>
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">        
+                            
+                    
+                                <label for="form_lastname">Lastname *</label>
+                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                                                
+                        
+                    
+                                <label for="form_email">Email *</label>
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                           
+                                <label for="form_lastname">Contact *</label>
+                                <input id="form_lastname" type="number" name="surname" class="form-control" placeholder="Please enter your Contact *" required="required" data-error="Lastname is required.">
+                                                                
+                                <label for="form_message">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea
+                                    >
+                               
+                            <br>
+                        <div class="col-md-12">
+                           <button id="buton">Submit</button> 
+                    
+            </div>
+            <br> <br>
+             </form>
+             <br> <br> <br> <br>
+</main>
+
+
+
+
+
+
+<%- include partials/bottom_nav.ejs%>
+
+<%- include partials/footer.ejs%> 

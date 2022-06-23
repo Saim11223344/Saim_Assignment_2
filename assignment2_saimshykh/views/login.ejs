@@ -1,0 +1,36 @@
+<%- include partials/header.ejs%>
+
+
+    <%- include partials/main_nav.ejs%>
+
+        <main id="contact">
+
+            <h1 id="display-5 text-light">Welcome to the Login Form</h1>
+            
+            
+            <form id="fo" role="form" method="post" action="login">
+
+                <label for="form_name">Username *</label>
+                <input id="form_name" type="text" name="username" class="form-control" placeholder="Please enter your Username" required="required" data-error="Username is required.">
+
+
+                <label for="form_lastname">Password *</label>
+                <input id="form_Password" type="password" name="password" class="form-control" placeholder="Please enter your Password" required="required" data-error="Password is required." >
+                <% if (ali != ""){ %><div class="alert alert-danger  my-3"><%= ali %></div><% } %> 
+                <div class="col-md-12 my-3">
+                    <input type="submit" class="btn btn-primary w-100" value="Login">
+
+                </div>
+
+            </form>
+
+        </main>
+
+
+
+
+
+
+        <%- include partials/bottom_nav.ejs%>
+
+            <%- include partials/footer.ejs%>

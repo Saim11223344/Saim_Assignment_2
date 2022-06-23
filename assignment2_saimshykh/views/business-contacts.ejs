@@ -1,0 +1,59 @@
+<%- include partials/header.ejs%>
+
+
+    <%- include partials/main_nav.ejs%>
+        <main id="xyz">
+            <div id="about">
+                <h1 id="display-5">Welcome to the
+                    <%= title %> page</h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                               Contact Name
+                            </th>
+                            <th>
+                                Contact Number
+                            </th>
+                            <th>
+                                Contact Email
+                            </th>
+                            <th>
+                                Edit
+                            </th>
+                            <th>
+                                Delete
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(var contact=0; contact < aliContacts.length; contact++) { %>
+                        <tr>
+                            <td>
+                                <%= aliContacts[contact].contactname  %>
+                            </td>
+                            <td>
+                                <%= aliContacts[contact].contactnumber  %>
+                            </td>
+                            <td>
+                                <%= aliContacts[contact].contactemail  %>
+                            </td>
+                            <td>
+                                <a href="/admin/edit-contact/<%= aliContacts[contact]._id %>" class="btn btn-secondary">Edit Contact</a>
+                                
+                            </td>
+                            <td>
+                                <a href="/admin/delete-contact/<%= aliContacts[contact]._id %>" class="btn btn-danger">Delete Contact</a>
+                            </td>
+                        </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+            
+        </main>
+
+
+        <%- include partials/bottom_nav.ejs%>
+
+            <%- include partials/footer.ejs%>

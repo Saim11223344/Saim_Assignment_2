@@ -1,0 +1,38 @@
+<%- include partials/header.ejs%>
+
+
+    <%- include partials/main_nav.ejs%>
+
+        <main id="contact">
+
+            <h1 id="display-5 text-light">Edit Contact</h1>
+            
+            
+            <form id="fo" role="form" method="post" action="/admin/edit-contact">
+                <input type="text"  name="id" value="<%= aliContact._id %>" hidden>
+                <label for="form_name">Contact Name *</label>
+                <input type="text" name="contactname" class="form-control" placeholder="Please enter your Contact Name" required="required" data-error="Contact Name is required." value="<%= aliContact.contactname %>">
+
+
+                <label for="form_name">Contact Number *</label>
+                <input type="text" name="contactnumber" class="form-control" placeholder="Please enter your Contact Number" required="required" data-error="Contact Number is required." value="<%= aliContact.contactnumber %>">
+                <label for="form_name">Contact Email *</label>
+                <input type="email" name="contactemail" class="form-control" placeholder="Please enter your Contact Email" required="required" data-error="Contact Email is required." value="<%= aliContact.contactemail %>">
+                <div class="col-md-12 my-3">
+                    <input type="submit" class="btn btn-primary w-100" value="Update Contact">
+                    <div class="col-md-12 my-3"><a href="/admin/delete-contact/<%= aliContact._id %>" class="btn btn-danger w-100">Delete Contact</a></div>
+                    <div class="col-md-12 my-3"><a href="/admin/business-contacts" class="btn btn-warning w-100">Cancel</a></div>
+                </div>
+
+            </form>
+
+        </main>
+
+
+
+
+
+
+        <%- include partials/bottom_nav.ejs%>
+
+            <%- include partials/footer.ejs%>

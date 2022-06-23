@@ -1,0 +1,125 @@
+/* custom css goes here */
+/*Main contents*/
+body{
+    background-color: #eaad62;
+}
+#main{
+    display: flex;
+    padding: 15px;
+    background-color: hsl(33, 76%, 65%);
+    align-content: center;
+
+}
+
+#A{
+    margin-top: 20px;
+    background-color: hsl(33, 76%, 65%);
+}
+/*footer*/
+footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/ 
+    height: 40px;
+    background: black;
+    color: white;
+}
+
+#about #images{
+    width:35%;
+    height:80%;
+    margin:50px;
+}
+   /*contact page*/
+
+#contact {
+    background-color: hsl(33, 76%, 65%);
+    padding-top: 32px;
+    
+}
+#contact #fo {
+    padding-left: 200px;
+    padding-right: 200px;
+    border-style: double;
+    border-radius: 50px;
+    padding: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 100px;
+}
+#tact {
+    margin-top: 70px;
+}
+
+#cat {
+    margin-right: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+
+}
+
+/* Project page */
+
+#pro {
+    
+    background-color: hsl(33, 76%, 65%);
+    padding-left: 20px;
+}
+
+#pro .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#pro img{
+    border: 5px solid #555;
+}
+#pro h3{
+    color: green;
+}
+/* Services page */
+#ser{
+    background-color: hsl(33, 76%, 65%);
+  padding-left: 20px;
+
+}
+p{
+    font-size: large;
+}
+#ser img{
+    text-align: center;
+}
+#ser .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  #ser img{
+    border: 5px solid #555;
+}
+/* About page */
+
+#xyz #images {
+    text-align: center;
+
+}
+#xyz {
+    background-color: hsl(33, 76%, 65%);
+
+}
+#detail{
+    font-size: large;
+}
+.table>:not(caption)>*>* {
+    padding: 0.5rem 0.5rem;
+    background-color: #ffffff9e;
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
